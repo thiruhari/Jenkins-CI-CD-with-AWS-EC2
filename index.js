@@ -7,8 +7,8 @@ app.get("/", (req, res) => {
     res.end("<div><p>Hello Jenkins_CI-CD !<p></div>");
 })
 
-//Starting server at 8000
-app.listen(8000, ()=>{
+//Starting server at 4000
+app.listen(4000, ()=>{
     console.log("Server has started.")
 
 })
