@@ -21,7 +21,7 @@ pipeline {
 
             steps {
                 // Build the Docker image 
-                sh "docker build -t bishal5438/my-node-app. "
+                sh "docker build -t bishal5438/my-node-app . "
 
                 // Print a message in the console
                 echo "Successfully build the image"
@@ -37,7 +37,7 @@ pipeline {
                 withCredentials(
                     [usernamePassword(
                         credentialsId: "docker_credentials", // Jenkins credentials ID
-                        usernameVariable: "docker_hub_username"
+                        usernameVariable: "docker_hub_username",
                         passwordVariable: "docker_hub_passsword", 
                     )]
                 )
@@ -50,7 +50,7 @@ pipeline {
                     echo "Login to dockerhub sucess"
 
                     // Push the Docker image to DockerHub
-                    sh "docker push ${env.docker_hub_username}/my-node-app"
+                    sh "docker push bishal5438/my-node-app"
 
                     // Print a message in the console
                     echo "Succesfully pushed the image"
