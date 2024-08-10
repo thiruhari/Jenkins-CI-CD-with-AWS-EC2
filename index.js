@@ -4,7 +4,7 @@ const app = express()
 
 app.get("/", (req, res) => {
     res.status(200)
-    res.end("<div><p>Hello Docker !<p></div>");
+    res.end("<div><p>Hello Jenkins_CI-CD !<p></div>");
 })
 
 //Starting server at 8000
