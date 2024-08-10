@@ -21,7 +21,7 @@ pipeline {
 
             steps {
                 // Build the Docker image 
-                sh "docker build . "
+                sh "docker build -t bishal5438/my-node-app. "
 
                 // Print a message in the console
                 echo "Successfully build the image"
