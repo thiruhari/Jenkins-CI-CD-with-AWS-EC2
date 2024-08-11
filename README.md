@@ -1,4 +1,4 @@
-# Jenkins_CI-CD
+# Jenkins CI/CD with AWS EC2
 
 This repository is a reference for the Medium article.
 
